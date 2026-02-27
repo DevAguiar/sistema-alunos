@@ -1,5 +1,6 @@
 def buscar_aluno(alunos):
-    nome = input("Qual aluno você quer buscar? ").title()
+    print("Iniciando busca por aluno!!!")
+    nome = input("--- Qual aluno você quer buscar? ").title()
     if nome in alunos:
         print(f"Aluno: {nome} | Idade: {alunos[nome]['idadealuno']} | Nota: {alunos[nome]['notaaluno']}")
     else:

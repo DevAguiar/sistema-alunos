@@ -10,10 +10,11 @@
 
 def listar_alunos(alunos):
     if alunos: # Verificação se a lista não está vazia    
+        print("Lista de alunos: ")
         nomes = list(alunos) # Cria uma lista contendo os nomes dos alunos no dicionário principal, formatados.
         print(" - ".join(nomes).title()) # Utiliza join para formatar o print dos nomes: nome1 - nome2 - nome3
     else:
-        print("Ainda não há nenhum aluno na lista!")
+        print("Ainda não há nenhum aluno na lista!!!")
 
 # ---------------------- Abaixo, forma de listar a idade de cada aluno.
 
