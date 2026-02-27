@@ -1,7 +1,8 @@
 from funcoes.adicionaraluno import adicionar_aluno # importa a função adicionar_aluno do arquivo adicionaraluno.py
-from funcoes.listaralunos import listar_alunos #importa a função listar_alunos do arquivo listaralunos.py
+from funcoes.listaralunos import listar_alunos 
+from funcoes.buscaraluno import buscar_aluno 
 
-alunos = [] # Lista de alunos que será utilizada nos códigos
+alunos = {} # Dicionário de alunos que será utilizada nos códigos
 
 def mostrarmenu():
     print("           -------------")
@@ -14,8 +15,8 @@ while True:
     menu = input("Escolha uma opção: ")
     match menu:
         case '1': adicionar_aluno(alunos) # Utiliza a função como se fosse própria, pois ela foi diretamente importada, e não o arquivo. 
-        case '2': listar_alunos(alunos)
-        # case '3': buscar_aluno()
+        case '2': listar_alunos(alunos) # Lista os nomes dos alunos já adicionados na lista
+        case '3': buscar_aluno(alunos)
         # case '4': remover_aluno()
         # case '5': media_alunos
         case '6': mostrarmenu()
