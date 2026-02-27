@@ -13,9 +13,9 @@ def mostrarmenu():
 mostrarmenu()
 
 while True:
-    print("           -------------")
+    print("------------------")
     menu = input("Escolha uma opção: ")
-    print("           -------------")
+    print("------------------")
     match menu:
         case '1': adicionar_aluno(alunos) # Utiliza a função como se fosse própria, pois ela foi diretamente importada, e não o arquivo. 
         case '2': listar_alunos(alunos) # Lista os nomes dos alunos já adicionados na lista
@@ -24,5 +24,5 @@ while True:
         # case '5': media_alunos
         case '6': mostrarmenu()
         case '7': break
-        case _: print("Digite uma opção válida\n") 
+        case _: print("Digite uma opção válida") 
 
